@@ -6,7 +6,7 @@ const Products = () => {
 
     const fetchData = async () => {
             try {
-            const res = await fetch('http://dummyjson.com/products')
+            const res = await fetch('https://dummyjson.com/products')
             const data = await res.json();
             SetProducts(data.products)
             console.log(data.products);
